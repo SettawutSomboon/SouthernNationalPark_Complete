@@ -5,7 +5,7 @@
 	$objDB = mysql_select_db("project3_travel");
 	$objQuery= mysql_query("SET NAMES UTF8");
 
-	$addressID = $_POST["addreID"];
+	$addressID = $_POST["addressID"];
 	$strSQL = "SELECT address,phone,park_name,latitude,longtitude FROM data_southnationpark where 1 AND id = '".$addressID."'";
 	$objQuery = mysql_query($strSQL);
 	$obResult = mysql_fetch_array($objQuery);
