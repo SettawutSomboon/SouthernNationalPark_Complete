@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="app.project2.southnationalpark"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+         android:largeHeap="true" >
+        <service android:name="app.project2.southnationalpark.feed.RssService" />
+
+        <activity
+            android:name=".Splashscreen"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainMenu"
+            android:screenOrientation="portrait" />
+        <activity android:name=".MainActivity"
+            	  android:label="@string/app_map" />
+        <activity android:name=".NationalPark" />
+        <activity
+            android:name="app.project2.southnationalpark.feed.FeedMain"
+            android:label="@string/app_feed"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Topography"
+            	  android:label="@string/app_topography" />
+        <activity android:name=".Climate"
+                  android:label="@string/app_climate" />
+        <activity android:name=".Plant"
+                  android:label="@string/app_plant" />
+        <activity android:name=".PlaceNationalPark"
+                  android:label="@string/app_place" />
+        <activity android:name=".TestTab"
+            	  android:label="@string/app_advice" />
+        <activity
+            android:name=".Category"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CategoryNationalPark"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ProvinceNationalPark" />
+        <activity
+            android:name=".AdviceNational"
+            android:label="@string/app_advice"
+            android:screenOrientation="portrait" />
+        <activity android:name=".MarineNationalPark" />
+        <activity android:name=".LandNationalPark" />
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBSA0R53ksZW-aZ-nDHB19VxJjAs4M1Cys" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

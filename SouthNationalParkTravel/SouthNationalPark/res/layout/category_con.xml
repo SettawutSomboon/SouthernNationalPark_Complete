@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="#C1FFC1" >
+    
+        <LinearLayout
+        android:id="@+id/li"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+    android:gravity="center"
+        android:layout_centerVertical="true">
+        
+            
+        
+              <LinearLayout
+            android:id="@+id/li_con"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:weightSum="1" >
+
+           <RelativeLayout
+                android:id="@+id/rl_btn1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/btn_land"
+                    android:layout_width="280dp"
+                    android:layout_height="200dp"
+                    android:background="@drawable/land" />
+
+            </RelativeLayout>
+             </LinearLayout>
+               <LinearLayout
+            android:id="@+id/li_conn"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:weightSum="1" >
+
+            <RelativeLayout
+                android:id="@+id/rl_btn2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/btn_marine"
+                    android:layout_width="280dp"
+                    android:layout_height="200dp"
+                    android:background="@drawable/marine" />
+            </RelativeLayout>
+        </LinearLayout>
+        
+		
+
+        
+        
+    </LinearLayout>
+
+</RelativeLayout>

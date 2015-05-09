@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="app.project2.southnationalpark.MainActivity" >
+
+    <item
+        android:id="@+id/nationalpark_menu"
+        android:showAsAction="never"
+        android:title="อุทยานแห่งชาติภาคใต้"/>
+
+</menu>
